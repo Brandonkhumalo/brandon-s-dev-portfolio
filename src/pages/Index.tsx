@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpeg";
-import hero2 from "@/assets/hero-2.jpeg";
-import projectTumago from "@/assets/project-tumago.jpg";
-import projectVoting from "@/assets/project-voting.jpg";
 
-const heroImages = [hero1, hero2];
+const heroImages = ["/IMG-2025.jpg"];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -31,7 +27,7 @@ const projects = [
     description:
       "A logistics platform enabling clients to book local package deliveries and drivers to accept jobs. Built with Django backend, real-time WebSockets, JWT auth, and native Android apps with Google Maps integration.",
     tech: ["Django", "Django Channels", "JWT", "Android (Java)", "Google Maps", "Docker", "AWS"],
-    image: projectTumago,
+    image: "/IMG-2025.jpg",
     github: "https://github.com/Brandonkhumalo/Tuma_Go_backend",
   },
   {
@@ -40,13 +36,13 @@ const projects = [
     description:
       "A scalable backend for an online voting system enabling poll creation, voting, and real-time result computation. Features WebSocket broadcasting, token-based auth, and comprehensive test coverage.",
     tech: ["Python", "Django REST Framework", "PostgreSQL", "Redis", "WebSockets", "Docker"],
-    image: projectVoting,
+    image: "/IMG-2025.jpg",
     github: "https://github.com/Brandonkhumalo/alx-project-nexus",
   },
 ];
 
 const Index = () => {
-const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -77,8 +73,8 @@ const [currentImage, setCurrentImage] = useState(0);
 
       {/* Hero */}
       <section className="relative flex min-h-screen items-center pt-20 overflow-hidden">
-        {/* Mobile-only background slideshow */}
-        <div className="absolute inset-0 sm:hidden">
+        {/* Background slideshow for all screens */}
+        <div className="absolute inset-0">
           <AnimatePresence mode="wait">
             <motion.img
               key={`hero-bg-${currentImage}`}
@@ -91,9 +87,9 @@ const [currentImage, setCurrentImage] = useState(0);
               className="absolute inset-0 h-full w-full object-cover"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-background/80" />
+          <div className="absolute inset-0 bg-background/90 sm:bg-background/80" />
         </div>
-        <div className="container mx-auto grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
+        <div className="container relative z-10 mx-auto grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -141,7 +137,7 @@ const [currentImage, setCurrentImage] = useState(0);
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
             </motion.div>
           </motion.div>
-          <div className="order-1 lg:order-2 hidden sm:flex justify-center">
+          <div className="order-1 lg:order-2 hidden lg:flex justify-center">
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent blur-2xl" />
               <div className="relative h-[400px] w-[300px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
@@ -161,6 +157,10 @@ const [currentImage, setCurrentImage] = useState(0);
             </div>
           </div>
         </div>
+        <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
+          <ChevronDown className="h-6 w-6" />
+        </a>
+      </section>
         <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
           <ChevronDown className="h-6 w-6" />
         </a>
