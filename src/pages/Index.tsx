@@ -208,8 +208,12 @@ const Index = () => {
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Lead the design, development and deployment of fullstack applications</li>
                 <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Built robust, scalable and high-performance applications with Java, TypeScript, React, Python, Django & PostgreSQL</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Work with Java, JavaScript, TypeScript, React, Node js, Python, Django, PostreSQL and SQL on a day to day basis</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Optimized application performance, scalability and resource usage</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Conducted code reviews, ensured adherence to industry standards</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Diagnosed and implemented solutions that balance speed, reliability and maintainability</li>
                 <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Deployed and maintained applications on AWS with CI/CD pipelines</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Conducted code reviews and ensured adherence to industry standards</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Ensured application security and data integrity across all platforms</li>
               </ul>
             </motion.div>
           </motion.div>
