@@ -137,7 +137,7 @@ const Index = () => {
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
             </motion.div>
           </motion.div>
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="hidden lg:flex order-1 lg:order-2 justify-center">
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent blur-2xl" />
               <div className="relative h-[300px] w-[225px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
