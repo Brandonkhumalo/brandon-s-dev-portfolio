@@ -76,7 +76,23 @@ const [currentImage, setCurrentImage] = useState(0);
       </nav>
 
       {/* Hero */}
-      <section className="relative flex min-h-screen items-center pt-20">
+      <section className="relative flex min-h-screen items-center pt-20 overflow-hidden">
+        {/* Mobile-only background slideshow */}
+        <div className="absolute inset-0 sm:hidden">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={`hero-bg-${currentImage}`}
+              src={heroImages[currentImage]}
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-background/80" />
+        </div>
         <div className="container mx-auto grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
           <motion.div
             initial="hidden"
@@ -151,23 +167,7 @@ const [currentImage, setCurrentImage] = useState(0);
       </section>
 
       {/* About */}
-      <section id="about" className="relative py-24 overflow-hidden">
-        {/* Mobile-only background slideshow */}
-        <div className="absolute inset-0 sm:hidden">
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={`about-bg-${currentImage}`}
-              src={heroImages[currentImage]}
-              alt=""
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </AnimatePresence>
-          <div className="absolute inset-0 bg-background/85" />
-        </div>
+      <section id="about" className="py-24">
         <div className="container mx-auto px-6">
           <SectionTitle label="About" title="Who I Am" />
           <motion.div
