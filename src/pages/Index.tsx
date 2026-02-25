@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown } from "lucide-react";
 
-const heroImages = ["/IMG-2025.jpg"];
+const heroImages = ["/assets/bee1.jpeg", "/assets/bee2.jpeg"];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -87,7 +87,7 @@ const Index = () => {
               className="absolute inset-0 h-full w-full object-cover"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-background/90 sm:bg-background/80" />
+          <div className="absolute inset-0 bg-background/60 sm:bg-background/80" />
         </div>
         <div className="container relative z-10 mx-auto grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
           <motion.div
@@ -137,10 +137,10 @@ const Index = () => {
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
             </motion.div>
           </motion.div>
-          <div className="order-1 lg:order-2 hidden lg:flex justify-center">
+          <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent blur-2xl" />
-              <div className="relative h-[400px] w-[300px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
+              <div className="relative h-[300px] w-[225px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={currentImage}
