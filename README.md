@@ -1,10 +1,17 @@
 # Brandon Khumalo Portfolio
 
-A professional portfolio website built with modern web technologies, showcasing projects, skills, and experience.
+Welcome to the official portfolio of Brandon Khumalo, a professional software engineer dedicated to building high-performance, accessible, and beautiful web experiences. This site showcases a curated selection of projects, technical expertise, and professional journey.
+
+## ✨ Key Features
+
+- **Project Gallery**: Deep dive into my latest work with live demos and technical breakdowns.
+- **Skill Overview**: A comprehensive look at my technical stack and expertise.
+- **Responsive Design**: Optimized for a seamless experience across all devices.
+- **Contact Integration**: Easy way to reach out for collaborations or inquiries.
 
 ## 🚀 Technologies
 
-This project is built with:
+This project is built with a modern tech stack focused on performance and developer experience:
 
 - **Frontend**: React 18, TypeScript
 - **Styling**: Tailwind CSS, shadcn/ui
@@ -14,26 +21,16 @@ This project is built with:
 - **Routing**: React Router DOM
 - **Data Fetching**: TanStack Query (React Query)
 
-## 🛠️ Getting Started
-
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
+## 🛠️ Development
 
 ### Installation
 
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
    ```sh
    npm install
    ```
 
-3. Start the development server:
+2. Start the development server:
    ```sh
    npm run dev
    ```
