@@ -27,7 +27,7 @@ const projects = [
     description:
       "A logistics platform enabling clients to book local package deliveries and drivers to accept jobs. Built with Django backend, real-time WebSockets, JWT auth, and native Android apps with Google Maps integration.",
     tech: ["Django", "Django Channels", "JWT", "Android (Java)", "Google Maps", "Docker", "AWS"],
-    image: "/IMG-2025.jpg",
+    image: "/images/tumago.png",
     github: "https://github.com/Brandonkhumalo/Tuma_Go_backend",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     description:
       "A scalable backend for an online voting system enabling poll creation, voting, and real-time result computation. Features WebSocket broadcasting, token-based auth, and comprehensive test coverage.",
     tech: ["Python", "Django REST Framework", "PostgreSQL", "Redis", "WebSockets", "Docker"],
-    image: "/IMG-2025.jpg",
+    image: "/images/voting-system.png",
     github: "https://github.com/Brandonkhumalo/alx-project-nexus",
   },
 ];
