@@ -161,10 +161,6 @@ const Index = () => {
           <ChevronDown className="h-6 w-6" />
         </a>
       </section>
-        <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
-          <ChevronDown className="h-6 w-6" />
-        </a>
-      </section>
 
       {/* About */}
       <section id="about" className="py-24">
