@@ -7,6 +7,7 @@ export default defineConfig(() => ({
     host: "::",
     port: 5000,
     allowedHosts: "all",
+    cors: true,
     hmr: {
       overlay: false,
     },
