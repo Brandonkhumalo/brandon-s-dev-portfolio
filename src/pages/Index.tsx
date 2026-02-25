@@ -1,8 +1,12 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown } from "lucide-react";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import hero1 from "@/assets/hero-1.jpeg";
+import hero2 from "@/assets/hero-2.jpeg";
 import projectTumago from "@/assets/project-tumago.jpg";
 import projectVoting from "@/assets/project-voting.jpg";
+
+const heroImages = [hero1, hero2];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -42,6 +46,15 @@ const projects = [
 ];
 
 const Index = () => {
+const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Nav */}
@@ -112,21 +125,25 @@ const Index = () => {
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
             </motion.div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="order-1 lg:order-2 flex justify-center"
-          >
+          <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent blur-2xl" />
-              <img
-                src={heroPortrait}
-                alt="Brandon Khumalo"
-                className="relative h-[400px] w-[300px] rounded-2xl object-cover sm:h-[480px] sm:w-[360px] border border-border"
-              />
+              <div className="relative h-[400px] w-[300px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={currentImage}
+                    src={heroImages[currentImage]}
+                    alt="Brandon Khumalo"
+                    initial={{ opacity: 0, x: 60 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -60 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </AnimatePresence>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
         <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
           <ChevronDown className="h-6 w-6" />
