@@ -125,7 +125,7 @@ const [currentImage, setCurrentImage] = useState(0);
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
             </motion.div>
           </motion.div>
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="order-1 lg:order-2 hidden sm:flex justify-center">
             <div className="relative">
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-primary/30 to-transparent blur-2xl" />
               <div className="relative h-[400px] w-[300px] sm:h-[480px] sm:w-[360px] rounded-2xl overflow-hidden border border-border">
@@ -151,7 +151,23 @@ const [currentImage, setCurrentImage] = useState(0);
       </section>
 
       {/* About */}
-      <section id="about" className="py-24">
+      <section id="about" className="relative py-24 overflow-hidden">
+        {/* Mobile-only background slideshow */}
+        <div className="absolute inset-0 sm:hidden">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={`about-bg-${currentImage}`}
+              src={heroImages[currentImage]}
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-background/85" />
+        </div>
         <div className="container mx-auto px-6">
           <SectionTitle label="About" title="Who I Am" />
           <motion.div
