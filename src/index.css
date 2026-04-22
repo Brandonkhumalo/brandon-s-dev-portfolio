@@ -85,4 +85,25 @@
   .glow {
     box-shadow: 0 0 40px -10px hsl(152 76% 44% / 0.3);
   }
+
+  .prose-custom p {
+    @apply mt-5 text-base leading-relaxed text-muted-foreground;
+  }
+
+  .prose-custom h2 {
+    @apply mt-10 mb-3 text-lg font-bold text-foreground tracking-tight;
+  }
+
+  .prose-custom ul {
+    @apply mt-4 space-y-2 pl-5 text-sm text-muted-foreground;
+    list-style: disc;
+  }
+
+  .prose-custom ul li {
+    @apply leading-relaxed;
+  }
+
+  .prose-custom em {
+    @apply text-foreground/80 not-italic font-medium;
+  }
 }
