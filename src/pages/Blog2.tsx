@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
 
 const fadeUp = {
@@ -24,6 +25,37 @@ const Blog2 = () => {
           <span className="font-mono text-sm font-semibold text-primary">BK</span>
         </div>
       </nav>
+
+      <Helmet>
+        <title>What Type of Systems Do I Like Working On | Brandon Khumalo</title>
+        <meta name="description" content="Brandon Khumalo on the types of systems he finds most absorbing — real-time platforms, coordination engines, systems built for the African context, and why consequential software demands different thinking." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://brandonkhumalo.dev/blog/systems-i-like" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://brandonkhumalo.dev/blog/systems-i-like" />
+        <meta property="og:title" content="What Type of Systems Do I Like Working On | Brandon Khumalo" />
+        <meta property="og:description" content="Real-time platforms, coordination engines, systems built for the African context — the common thread across the work I find most absorbing." />
+        <meta property="og:image" content="https://brandonkhumalo.dev/assets/me.jpg" />
+        <meta property="article:author" content="Brandon Khumalo" />
+        <meta property="article:published_time" content="2026-04-22" />
+        <meta property="article:tag" content="Backend" />
+        <meta property="article:tag" content="Systems Design" />
+        <meta property="article:tag" content="Africa" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What Type of Systems Do I Like Working On | Brandon Khumalo" />
+        <meta name="twitter:description" content="Real-time platforms, coordination engines, systems built for the African context — the work I find most absorbing." />
+        <meta name="twitter:image" content="https://brandonkhumalo.dev/assets/me.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "What Type of Systems Do I Like Working On",
+          "author": { "@type": "Person", "name": "Brandon Khumalo", "url": "https://brandonkhumalo.dev" },
+          "datePublished": "2026-04-22",
+          "url": "https://brandonkhumalo.dev/blog/systems-i-like",
+          "image": "https://brandonkhumalo.dev/assets/me.jpg",
+          "keywords": ["Real-Time Systems", "Backend Engineering", "Africa Tech", "Systems Design", "Go", "Django"]
+        })}</script>
+      </Helmet>
 
       <main className="container mx-auto max-w-3xl px-6 pt-32 pb-24">
         <motion.div initial="hidden" animate="visible">

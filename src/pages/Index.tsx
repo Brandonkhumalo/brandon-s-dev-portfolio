@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X } from "lucide-react";
 import TumaGoArchitecture from "@/components/TumaGoArchitecture";
 
@@ -97,6 +98,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Brandon Khumalo | Backend-Focused Full-Stack Developer — Harare, Zimbabwe</title>
+        <meta name="description" content="Brandon Khumalo is a backend-focused full-stack developer from Harare, Zimbabwe, building scalable APIs and systems with Go (Echo), Python (Django), React, PostgreSQL, Docker, and AWS." />
+        <link rel="canonical" href="https://brandonkhumalo.dev/" />
+        <meta property="og:url" content="https://brandonkhumalo.dev/" />
+        <meta property="og:title" content="Brandon Khumalo | Backend-Focused Full-Stack Developer" />
+        <meta property="og:description" content="Backend-focused full-stack developer from Harare, Zimbabwe. Building real-time systems, APIs, and production platforms with Go, Django, React, and AWS." />
+      </Helmet>
+
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between px-6 py-4">

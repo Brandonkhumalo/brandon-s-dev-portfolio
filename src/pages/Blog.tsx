@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
 
 const fadeUp = {
@@ -24,6 +25,37 @@ const Blog = () => {
           <span className="font-mono text-sm font-semibold text-primary">BK</span>
         </div>
       </nav>
+
+      <Helmet>
+        <title>Why I Chose Go (Echo) and Python (Django) | Brandon Khumalo</title>
+        <meta name="description" content="A technical breakdown of why Brandon Khumalo uses Go + Echo for high-concurrency real-time services and Python Django for business logic — including the tradeoffs and the principle behind the split." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://brandonkhumalo.dev/blog/go-echo-django" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://brandonkhumalo.dev/blog/go-echo-django" />
+        <meta property="og:title" content="Why I Chose Go (Echo) and Python (Django) | Brandon Khumalo" />
+        <meta property="og:description" content="A technical breakdown of why I use Go + Echo for high-concurrency real-time services and Django for business logic — the tradeoffs I consciously accepted." />
+        <meta property="og:image" content="https://brandonkhumalo.dev/assets/me.jpg" />
+        <meta property="article:author" content="Brandon Khumalo" />
+        <meta property="article:published_time" content="2026-04-22" />
+        <meta property="article:tag" content="Go" />
+        <meta property="article:tag" content="Django" />
+        <meta property="article:tag" content="Backend Architecture" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Why I Chose Go (Echo) and Python (Django) | Brandon Khumalo" />
+        <meta name="twitter:description" content="A technical breakdown of why I use Go + Echo for real-time services and Django for business logic." />
+        <meta name="twitter:image" content="https://brandonkhumalo.dev/assets/me.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Why I Chose Go (Echo) and Python (Django) as My Main Tech Stack",
+          "author": { "@type": "Person", "name": "Brandon Khumalo", "url": "https://brandonkhumalo.dev" },
+          "datePublished": "2026-04-22",
+          "url": "https://brandonkhumalo.dev/blog/go-echo-django",
+          "image": "https://brandonkhumalo.dev/assets/me.jpg",
+          "keywords": ["Go", "Echo", "Django", "Python", "Backend Architecture", "Microservices"]
+        })}</script>
+      </Helmet>
 
       <main className="container mx-auto max-w-3xl px-6 pt-32 pb-24">
         <motion.div initial="hidden" animate="visible">
