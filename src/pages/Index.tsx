@@ -4,6 +4,12 @@ import { Helmet } from "react-helmet-async";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X } from "lucide-react";
 import TumaGoArchitecture from "@/components/TumaGoArchitecture";
 
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+  </svg>
+);
+
 const heroImages = ["/assets/bee1.jpeg", "/assets/bee2.jpeg", "/assets/me.jpg"];
 
 const fadeUp = {
@@ -99,12 +105,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Brandon Khumalo | Backend-Focused Full-Stack Developer — Harare, Zimbabwe</title>
-        <meta name="description" content="Brandon Khumalo is a backend-focused full-stack developer from Harare, Zimbabwe, building scalable APIs and systems with Go (Echo), Python (Django), React, PostgreSQL, Docker, and AWS." />
-        <link rel="canonical" href="https://brandonkhumalo.dev/" />
-        <meta property="og:url" content="https://brandonkhumalo.dev/" />
-        <meta property="og:title" content="Brandon Khumalo | Backend-Focused Full-Stack Developer" />
-        <meta property="og:description" content="Backend-focused full-stack developer from Harare, Zimbabwe. Building real-time systems, APIs, and production platforms with Go, Django, React, and AWS." />
+        <title>Brandon Khumalo | Software Developer & Backend Engineer — Harare, Zimbabwe</title>
+        <meta name="description" content="Brandon Khumalo is a Software Developer and Backend Engineer from Harare, Zimbabwe, specialising in Go (Echo), Python (Django), React, PostgreSQL, Docker, and AWS." />
+        <link rel="canonical" href="https://brandonkhumalo.co.zw/" />
+        <meta property="og:url" content="https://brandonkhumalo.co.zw/" />
+        <meta property="og:title" content="Brandon Khumalo | Software Developer & Backend Engineer" />
+        <meta property="og:description" content="Brandon Khumalo — Software Developer and Backend Engineer from Harare, Zimbabwe. Building scalable systems, APIs, and production platforms with Go, Django, React, PostgreSQL, and AWS." />
       </Helmet>
 
       {/* Nav */}
@@ -221,9 +227,10 @@ const Index = () => {
               </a>
             </motion.div>
             <motion.div variants={fadeUp} custom={5} className="mt-8 flex items-center gap-5">
-              <SocialLink href="https://github.com/Brandonkhumalo" icon={<Github className="h-5 w-5" />} />
-              <SocialLink href="https://www.linkedin.com/in/brandon-khumalo04/" icon={<Linkedin className="h-5 w-5" />} />
-              <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} />
+              <SocialLink href="https://github.com/Brandonkhumalo" icon={<Github className="h-5 w-5" />} label="GitHub" />
+              <SocialLink href="https://www.linkedin.com/in/brandon-khumalo04/" icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" />
+              <SocialLink href="https://www.tiktok.com/@brandonkhumz" icon={<TikTokIcon className="h-5 w-5" />} label="TikTok" />
+              <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} label="Email" />
             </motion.div>
           </motion.div>
         </div>
@@ -532,6 +539,15 @@ const Index = () => {
                 LinkedIn
               </a>
               <a
+                href="https://www.tiktok.com/@brandonkhumz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-all"
+              >
+                <TikTokIcon className="h-4 w-4" />
+                TikTok
+              </a>
+              <a
                 href="https://github.com/Brandonkhumalo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -593,11 +609,12 @@ const Index = () => {
   );
 };
 
-const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
+const SocialLink = ({ href, icon, label }: { href: string; icon: React.ReactNode; label?: string }) => (
   <a
     href={href}
     target="_blank"
     rel="noopener noreferrer"
+    aria-label={label}
     className="text-muted-foreground transition-colors hover:text-primary"
   >
     {icon}

@@ -10,5 +10,10 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: Bytespider
+Allow: /
+
 User-agent: *
 Allow: /
+
+Sitemap: https://brandonkhumalo.co.zw/sitemap.xml
