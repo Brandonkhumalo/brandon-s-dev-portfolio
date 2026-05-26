@@ -22,10 +22,10 @@ const fadeUp = {
 };
 
 const skills = {
-  "Languages": ["Java", "Python", "JavaScript", "TypeScript", "Go", "SQL"],
-  "Frameworks": ["Django REST Framework", "Echo", "React", "Node.js", "Firebase"],
-  "Cloud & DevOps": ["AWS", "Docker", "CI/CD", "PostgreSQL", "Redis"],
-  "Tools": ["Git & GitHub", "Android Studio", "VS Code"],
+  "Languages": ["Go", "Python", "JavaScript", "TypeScript", "SQL"],
+  "Frameworks": ["Echo", "Django REST Framework", "React", "Node.js", "Firebase"],
+  "Cloud & DevOps": ["AWS", "Docker", "CI/CD", "GitHub Actions", "Kubernetes", "PostgreSQL", "Redis"],
+  "Tools": ["Git & GitHub", "VS Code", "Linux"],
 };
 
 const projects = [
@@ -105,12 +105,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Brandon Khumalo | Software Developer & Backend Engineer — Harare, Zimbabwe</title>
-        <meta name="description" content="Brandon Khumalo is a Software Developer and Backend Engineer from Harare, Zimbabwe, specialising in Go (Echo), Python (Django), React, PostgreSQL, Docker, and AWS." />
+        <title>Brandon Khumalo | Backend Engineer & DevOps Engineer — Harare, Zimbabwe</title>
+        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/" />
-        <meta property="og:title" content="Brandon Khumalo | Software Developer & Backend Engineer" />
-        <meta property="og:description" content="Brandon Khumalo — Software Developer and Backend Engineer from Harare, Zimbabwe. Building scalable systems, APIs, and production platforms with Go, Django, React, PostgreSQL, and AWS." />
+        <meta property="og:title" content="Brandon Khumalo | Backend Engineer & DevOps Engineer" />
+        <meta property="og:description" content="Brandon Khumalo — Backend Engineer and DevOps Engineer from Harare, Zimbabwe. Building scalable systems and APIs with Go (Echo), Python (Django), JavaScript, React, PostgreSQL — and running them on AWS with Docker and CI/CD pipelines." />
       </Helmet>
 
       {/* Nav */}
@@ -202,7 +202,7 @@ const Index = () => {
               custom={3}
               className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground"
             >
-              Backend-focused full-stack developer building scalable APIs and systems with Python Django, Golang Echo, PostgreSQL, Docker, and AWS — with a reach across mobile (Java) and web (React, TypeScript) when the product demands it.
+              Backend Engineer & DevOps Engineer building scalable APIs and systems with Go (Echo), Python (Django), JavaScript and React — and running them in production on AWS with Docker, Kubernetes, and CI/CD pipelines.
             </motion.p>
             <motion.div variants={fadeUp} custom={4} className="mt-8 flex flex-wrap items-center gap-4">
               <a
@@ -251,13 +251,16 @@ const Index = () => {
             className="mx-auto max-w-3xl"
           >
             <motion.p variants={fadeUp} custom={0} className="text-base leading-relaxed text-muted-foreground">
-              I'm a backend-focused full-stack developer and ALX Software Engineering graduate with hands-on experience building scalable applications and APIs using Python Django, Golang Echo, PostgreSQL, Docker, REST APIs, and AWS — the core technologies I work with daily at Tishanyq Digital.
+              I'm a Backend Engineer and DevOps Engineer, and an ALX Software Engineering graduate, with hands-on experience building scalable applications and APIs using Go (Echo), Python (Django), JavaScript, React, and PostgreSQL — the core technologies I work with daily at Tishanyq Digital.
             </motion.p>
             <motion.p variants={fadeUp} custom={1} className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I also bring experience in mobile development with Java and web development with React, TypeScript, and Tailwind CSS, allowing me to contribute across the full product stack when needed. My main strength is backend engineering — building reliable systems, clean architectures, performant APIs, and maintainable codebases.
+              On the DevOps side, I own our AWS infrastructure and CI/CD pipelines at Tishanyq Digital — provisioning cloud resources, containerising services with Docker, and automating deployments through GitHub Actions. I'm AWS Certified Cloud Practitioner and currently studying toward the AWS Certified DevOps Engineer certification.
             </motion.p>
             <motion.p variants={fadeUp} custom={2} className="mt-4 text-base leading-relaxed text-muted-foreground">
-              I enjoy solving real-world problems with technology, improving system performance, and developing software that is practical, efficient, and user-focused. I'm always looking to grow, take on meaningful challenges, and contribute to teams building high-quality products.
+              I can also work on the frontend when a project calls for it — I have working knowledge of React, Next.js, TypeScript and Tailwind CSS and have shipped real UIs (including the Laptop World admin dashboard). To be upfront though: frontend isn't my strongest skill. I'll pick it up and deliver, but my edge is on the backend and infrastructure side.
+            </motion.p>
+            <motion.p variants={fadeUp} custom={3} className="mt-4 text-base leading-relaxed text-muted-foreground">
+              My main strength is backend engineering — building reliable systems, clean architectures, performant APIs, and maintainable codebases — paired with the operational skills to deploy and run them in production. I enjoy solving real-world problems with technology, improving system performance, and contributing to teams building high-quality products.
             </motion.p>
             <motion.div variants={fadeUp} custom={3} className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <StatCard label="Experience" value="1+ yr" />
@@ -282,7 +285,7 @@ const Index = () => {
             <motion.div variants={fadeUp} custom={0} className="rounded-xl border border-border bg-card p-6">
               <div className="flex items-start justify-between flex-wrap gap-2">
                 <div>
-                  <h3 className="text-lg font-semibold">Software Developer</h3>
+                  <h3 className="text-lg font-semibold">Backend Engineer & DevOps Engineer</h3>
                   <p className="text-primary font-mono text-sm">Tishanyq Digital</p>
                 </div>
                 <span className="font-mono text-xs text-muted-foreground rounded-full border border-border px-3 py-1">
@@ -290,13 +293,13 @@ const Index = () => {
                 </span>
               </div>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Design system architecture and lead the development and deployment of fullstack applications as a backend-focused fullstack developer</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Built robust, scalable and high-performance applications with Java, TypeScript, React, Python, Django, Go (Echo) & PostgreSQL</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Work with Java, JavaScript, TypeScript, React, Node.js, Python, Django, Go, Echo, PostgreSQL and SQL on a day to day basis</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Optimized application performance, scalability and resource usage</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Design system architecture and lead the development and deployment of backend-driven applications end to end</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Built robust, scalable and high-performance applications with Go (Echo), Python (Django), JavaScript, React and PostgreSQL</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Work with Go, Echo, Python, Django, JavaScript, TypeScript, React, Node.js, PostgreSQL and SQL on a day to day basis</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Own AWS cloud infrastructure — provisioning, configuring and managing the services that run our applications in production</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Design and maintain CI/CD pipelines with GitHub Actions and containerise services with Docker for repeatable, automated deployments</li>
+                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Optimized application performance, scalability and resource usage across both code and infrastructure</li>
                 <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Conducted code reviews, ensured adherence to industry standards</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Diagnosed and implemented solutions that balance speed, reliability and maintainability</li>
-                <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Deployed and maintained applications on AWS with CI/CD pipelines using GitHub Actions</li>
                 <li className="flex gap-2"><span className="text-primary mt-1">▹</span> Ensured application security and data integrity across all platforms</li>
               </ul>
             </motion.div>
@@ -487,9 +490,9 @@ const Index = () => {
             className="mx-auto max-w-3xl space-y-3"
           >
             {[
+              { title: "AWS Certified DevOps Engineer", org: "Amazon Web Services", date: "In Progress" },
+              { title: "AWS Certified Cloud Practitioner", org: "Amazon Web Services", date: "2024" },
               { title: "Certificate in Pro Backend Development", org: "ALX Africa", date: "2025" },
-              { title: "AWS Cloud Practitioner", org: "Amazon Web Services", date: "2024" },
-              { title: "Java Android Mobile Development", org: "Udemy", date: "2025" },
               { title: "ALX Professional Foundations", org: "ALX Africa", date: "2025" },
               { title: "Google IT Support", org: "Google", date: "2025" },
             ].map((cert, i) => (
