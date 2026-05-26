@@ -30,6 +30,15 @@ const skills = {
 
 const projects = [
   {
+    title: "My School Hub",
+    subtitle: "Multi-Tenant SaaS School Management Platform — Tishanyq Digital, Solo-Built Backend + Infra",
+    description:
+      "A multi-tenant SaaS school management platform serving 13 distinct user roles across academics, boarding, clinic, finances, HR, library, and WhatsApp/PayNow integrations. Solo-built the backend and cloud infrastructure: a Go (Echo) API gateway fronting a Django/DRF core (~45+ domain models) plus two specialised Go services for streaming CSV bulk-imports and external I/O (PDF report cards, PayNow Zimbabwe, Resend email, WhatsApp Business API). Designed row-level multi-tenancy in Django with custom tenant-aware managers, implemented JWT auth (HS256) with a Postgres-backed token blacklist enforced at the gateway, and shipped a configurable report-card engine with per-school branding and an approval → release workflow. Architected and deployed the AWS infrastructure end-to-end in af-south-1 — EC2, RDS PostgreSQL, ElastiCache Redis, S3, ECR, Nginx + Let's Encrypt SSL, and GitHub Actions CI/CD — with a documented 5-phase scaling path from a single t3.medium up to ECS + ALB auto-scaling.",
+    tech: ["Go", "Echo", "Python", "Django", "Django REST Framework", "PostgreSQL", "Redis", "Celery", "Docker", "Nginx", "AWS EC2", "AWS RDS", "AWS S3", "AWS ECR", "AWS ElastiCache", "GitHub Actions", "Let's Encrypt", "JWT", "PayNow", "WhatsApp Business API"],
+    image: "/images/myschoolhub.png",
+    live: "https://myschoolhub.co.zw",
+  },
+  {
     title: "Laptop World",
     subtitle: "Full-Stack E-Commerce Platform — Real Client, Production Deployed",
     description:
@@ -106,7 +115,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Brandon Khumalo | Backend Engineer & DevOps Engineer — Harare, Zimbabwe</title>
-        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
+        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, and the builder of My School Hub (myschoolhub.co.zw) — a multi-tenant SaaS school management platform at Tishanyq Digital. Specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/" />
         <meta property="og:title" content="Brandon Khumalo | Backend Engineer & DevOps Engineer" />
@@ -433,6 +442,27 @@ const Index = () => {
             className="mx-auto max-w-4xl"
           >
             <div className="space-y-4">
+              <a
+                href="/blog/my-school-hub"
+                className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
+              >
+                <span className="font-mono text-xs text-primary uppercase tracking-widest">SaaS · Multi-Tenant · AWS</span>
+                <h3 className="mt-2 text-lg font-bold leading-snug group-hover:text-primary transition-colors">
+                  Building My School Hub: A Polyglot SaaS Platform for African Schools
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  How I designed a multi-tenant school management system in Go + Django, deployed it to AWS,
+                  and built it to scale from one school to a hundred thousand users — without rewriting the application once.
+                </p>
+                <div className="mt-4 flex items-center gap-4 text-xs text-muted-foreground font-mono">
+                  <span>May 2026</span>
+                  <span>·</span>
+                  <span>10 min read</span>
+                  <span>·</span>
+                  <span className="text-primary group-hover:underline">Read article →</span>
+                </div>
+              </a>
+
               <a
                 href="/blog/go-echo-django"
                 className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
