@@ -122,7 +122,16 @@ const Blog3 = () => {
               I wanted to build something different: a single platform any school could subscribe to, with its data fully isolated from every other school's data, that handled the entire administrative surface area — not just one slice of it — and that could start cheap enough for a small school to afford and scale to a national rollout without a rewrite.
             </p>
             <p>
-              That platform is <strong className="text-foreground">My School Hub</strong>.
+              That platform is{" "}
+              <a
+                href="https://myschoolhub.co.zw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-primary underline underline-offset-4 hover:text-foreground transition-colors"
+              >
+                My School Hub
+              </a>
+              .
             </p>
             <p>
               This post is the architecture story: what's in it, why each piece is the way it is, and what I learned building it.
