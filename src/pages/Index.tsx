@@ -218,7 +218,7 @@ const Index = () => {
                 Get in Touch
               </a>
               <a
-                href="/Brandon cv-main.pdf"
+                href="/Brandon-cv-main.pdf"
                 download="Brandon_Khumalo_CV.pdf"
                 className="inline-flex items-center gap-2 rounded-lg border border-primary/40 px-6 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/10"
               >
