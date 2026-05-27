@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X, Youtube } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X, Youtube, GraduationCap, ArrowRight } from "lucide-react";
 import TumaGoArchitecture from "@/components/TumaGoArchitecture";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -115,11 +115,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Brandon Khumalo | Backend Engineer & DevOps Engineer — Harare, Zimbabwe</title>
-        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, and the builder of My School Hub (myschoolhub.co.zw) — a multi-tenant SaaS school management platform at Tishanyq Digital. Specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
+        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, and the builder of My School Hub (myschoolhub.co.zw) — a multi-tenant SaaS school management platform at Tishanyq Digital. Founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw) — an online coding bootcamp for Zimbabwe and Africa, launching soon. Specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/" />
         <meta property="og:title" content="Brandon Khumalo | Backend Engineer & DevOps Engineer" />
-        <meta property="og:description" content="Brandon Khumalo — Backend Engineer and DevOps Engineer from Harare, Zimbabwe. Building scalable systems and APIs with Go (Echo), Python (Django), JavaScript, React, PostgreSQL — and running them on AWS with Docker and CI/CD pipelines." />
+        <meta property="og:description" content="Brandon Khumalo — Backend Engineer and DevOps Engineer from Harare, Zimbabwe. Building scalable systems with Go (Echo), Python (Django), React, and PostgreSQL on AWS. Founder of Ubuntu Tech Academy, an online coding bootcamp for Zimbabwe and Africa (launching soon)." />
       </Helmet>
 
       {/* Nav */}
@@ -271,12 +271,65 @@ const Index = () => {
             <motion.p variants={fadeUp} custom={3} className="mt-4 text-base leading-relaxed text-muted-foreground">
               My main strength is backend engineering — building reliable systems, clean architectures, performant APIs, and maintainable codebases — paired with the operational skills to deploy and run them in production. I enjoy solving real-world problems with technology, improving system performance, and contributing to teams building high-quality products.
             </motion.p>
-            <motion.div variants={fadeUp} custom={3} className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <motion.p variants={fadeUp} custom={4} className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Beyond client work, I'm the founder of <a href="https://ubuntutechacademy.co.zw" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ubuntu Tech Academy</a> — an online coding bootcamp I'm launching to train the next generation of software developers in Zimbabwe and across Africa. It's my way of paying forward the path I took into this industry.
+            </motion.p>
+            <motion.div variants={fadeUp} custom={5} className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
               <StatCard label="Experience" value="1+ yr" />
               <StatCard label="Projects" value="5+" />
               <StatCard label="Certifications" value="4" />
               <StatCard label="Stack" value="Full" />
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Founder — Ubuntu Tech Academy */}
+      <section id="academy" className="py-24">
+        <div className="container mx-auto px-6">
+          <SectionTitle label="Founder" title="Ubuntu Tech Academy" />
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeUp}
+            custom={0}
+            className="mx-auto max-w-4xl"
+          >
+            <div className="relative overflow-hidden rounded-2xl border border-primary/20 bg-card p-8 sm:p-10">
+              {/* glow accents */}
+              <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full bg-emerald-400/20 blur-[80px]" />
+              <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-purple-600/20 blur-[80px]" />
+              <div className="relative">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <GraduationCap className="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h3 className="text-2xl font-bold">Ubuntu Tech Academy</h3>
+                    <p className="font-mono text-sm text-primary">Online Coding Bootcamp · Zimbabwe & Africa</p>
+                  </div>
+                  <span className="ml-auto rounded-full border border-primary/40 px-3 py-1 font-mono text-xs text-primary">
+                    Coming Soon
+                  </span>
+                </div>
+                <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+                  I'm the founder of Ubuntu Tech Academy — an online coding bootcamp on a mission to train
+                  the next generation of software developers in Zimbabwe and across Africa. It's built around
+                  the same principle that shaped my own career: practical, project-driven learning that gets
+                  people building real, production-grade software — not just passing tutorials.
+                </p>
+                <a
+                  href="https://ubuntutechacademy.co.zw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow"
+                >
+                  Visit ubuntutechacademy.co.zw
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
