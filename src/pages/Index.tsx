@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X, Youtube, GraduationCap, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, MapPin, ChevronDown, Download, Network, X, Youtube, Facebook, GraduationCap, ArrowRight } from "lucide-react";
 import TumaGoArchitecture from "@/components/TumaGoArchitecture";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -240,6 +240,7 @@ const Index = () => {
               <SocialLink href="https://www.linkedin.com/in/brandon-khumalo04/" icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" />
               <SocialLink href="https://www.tiktok.com/@brandonkhumz" icon={<TikTokIcon className="h-5 w-5" />} label="TikTok" />
               <SocialLink href="https://www.youtube.com/@brandonkhumalo4620" icon={<Youtube className="h-5 w-5" />} label="YouTube" />
+              <SocialLink href="https://www.facebook.com/people/Brandon-Khumalo/100047518344256/" icon={<Facebook className="h-5 w-5" />} label="Facebook" />
               <SocialLink href="mailto:brandonkhumz40@gmail.com" icon={<Mail className="h-5 w-5" />} label="Email" />
             </motion.div>
           </motion.div>
@@ -651,6 +652,15 @@ const Index = () => {
               >
                 <Youtube className="h-4 w-4" />
                 YouTube
+              </a>
+              <a
+                href="https://www.facebook.com/people/Brandon-Khumalo/100047518344256/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-all"
+              >
+                <Facebook className="h-4 w-4" />
+                Facebook
               </a>
             </motion.div>
           </motion.div>
