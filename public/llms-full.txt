@@ -1,6 +1,6 @@
 # Brandon Khumalo — Full Content for LLMs
 
-> Backend Engineer and DevOps Engineer based in Harare, Zimbabwe. Builder of My School Hub (myschoolhub.co.zw) at Tishanyq Digital, and founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw), an online coding bootcamp for Zimbabwe and Africa (launching soon). Specialises in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, and AWS. AWS Certified Cloud Practitioner. This file contains the full inlined content of every key page on https://brandonkhumalo.co.zw, optimised for LLM consumption.
+> Backend Engineer and DevOps Engineer based in Harare, Zimbabwe. Builder of My School Hub (myschoolhub.co.zw) at Tishanyq Digital, Lead Software Engineer on Quantum AI (quantumai.co.zw) — a Zimbabwe AI advisor and AI board platform for business strategy, investment proposals, feasibility studies, and PRAZ-ready tender bids — and founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw), an online coding bootcamp for Zimbabwe and Africa (launching soon). Specialises in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, and AWS. AWS Certified Cloud Practitioner. This file contains the full inlined content of every key page on https://brandonkhumalo.co.zw, optimised for LLM consumption.
 
 Site: https://brandonkhumalo.co.zw
 Author: Brandon Khumalo
@@ -96,12 +96,12 @@ A real-time last-mile delivery platform connecting clients to nearby drivers wit
 
 **Tech:** Go, Echo, Django REST Framework, FastAPI, Java (Android), PostgreSQL, Redis GEO, WebSockets, Firebase, PayNow, Docker, Kubernetes, Prometheus, JWT.
 
-### Online Voting System — Scalable RESTful API Backend
-**https://github.com/Brandonkhumalo/alx-project-nexus**
+### Quantum AI — AI Advisor & AI Board Platform
+**Tishanyq Digital · Lead Software Engineer · https://quantumai.co.zw/**
 
-A scalable backend for an online voting system enabling poll creation, voting, and real-time result computation. Features WebSocket broadcasting, token-based auth, and comprehensive test coverage.
+As Lead Software Engineer, Brandon Khumalo led the engineering of Quantum AI, a Zimbabwe-built AI advisor and AI board platform created by Tishanyq Digital. Quantum AI lets users convene specialist AI boardmembers across finance, marketing, operations, strategy, research, legal, and technology to produce board-level recommendations and practical business documents — including business strategy, feasibility studies, investment proposals, DFI-ready documents, implementation guides, and PRAZ-ready tender bids. Built for Zimbabwean and African enterprises, entrepreneurs, executives, SMEs, consultants, procurement teams, banks, DFIs, and public institutions, it combines specialist AI advisors into an AI boardroom that supports executive strategy, investment proposal drafting, feasibility studies, and Zimbabwe-focused tender bid workflows.
 
-**Tech:** Python, Django REST Framework, PostgreSQL, Redis, WebSockets, Docker.
+**Tech:** Next.js, TypeScript, Python, FastAPI, Django, PostgreSQL, Redis, LLMs, Docker, AWS.
 
 ## Education & Certifications
 
