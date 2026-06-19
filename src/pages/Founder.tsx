@@ -19,14 +19,14 @@ const Founder = () => {
         <title>Brandon Khumalo | Founder of Ubuntu Tech Academy — Coding Bootcamp Zimbabwe</title>
         <meta
           name="description"
-          content="Brandon Khumalo is the founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw), an online coding bootcamp training the next generation of software developers in Zimbabwe and across Africa. Practical, project-driven learning, launching soon."
+          content="Brandon Khumalo is the founder of Ubuntu Tech Academy, an online coding bootcamp training the next generation of software developers in Zimbabwe and across Africa through practical, project-driven learning."
         />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/founder" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/founder" />
         <meta property="og:title" content="Brandon Khumalo | Founder of Ubuntu Tech Academy" />
         <meta
           property="og:description"
-          content="Founder of Ubuntu Tech Academy — an online coding bootcamp for Zimbabwe and Africa (launching soon). Practical, project-driven learning that gets people building real, production-grade software."
+          content="Founder of Ubuntu Tech Academy, an online coding bootcamp for Zimbabwe and Africa. Practical, project-driven learning that gets people building real, production-grade software."
         />
       </Helmet>
 
@@ -78,7 +78,7 @@ const Founder = () => {
                     <p className="font-mono text-sm text-primary">Online Coding Bootcamp · Zimbabwe & Africa</p>
                   </div>
                   <span className="ml-auto rounded-full border border-primary/40 px-3 py-1 font-mono text-xs text-primary">
-                    Coming Soon
+                    Python Assignments
                   </span>
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -92,15 +92,13 @@ const Founder = () => {
                   giving aspiring developers across the continent a hands-on, ship-it route into backend, cloud,
                   and full-stack engineering.
                 </p>
-                <a
-                  href="https://ubuntutechacademy.co.zw"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/assignments"
                   className="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow"
                 >
-                  Visit ubuntutechacademy.co.zw
+                  View Python Assignments
                   <ArrowRight className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
