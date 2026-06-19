@@ -16,17 +16,17 @@ const Founder = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Brandon Khumalo | Founder of Ubuntu Tech Academy — Coding Bootcamp Zimbabwe</title>
+        <title>Brandon Khumalo | Co-founder of Ubuntu Tech Academy — Coding Bootcamp Zimbabwe</title>
         <meta
           name="description"
-          content="Brandon Khumalo is the founder of Ubuntu Tech Academy, an online coding bootcamp training the next generation of software developers in Zimbabwe and across Africa through practical, project-driven learning."
+          content="Brandon Khumalo is the co-founder of Ubuntu Tech Academy, an online coding bootcamp in Zimbabwe training the next generation of software developers in Zimbabwe and across Africa through practical, project-driven learning."
         />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/founder" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/founder" />
-        <meta property="og:title" content="Brandon Khumalo | Founder of Ubuntu Tech Academy" />
+        <meta property="og:title" content="Brandon Khumalo | Co-founder of Ubuntu Tech Academy" />
         <meta
           property="og:description"
-          content="Founder of Ubuntu Tech Academy, an online coding bootcamp for Zimbabwe and Africa. Practical, project-driven learning that gets people building real, production-grade software."
+          content="Co-founder of Ubuntu Tech Academy, an online coding bootcamp in Zimbabwe for Zimbabwe and Africa. Practical, project-driven learning that gets people building real, production-grade software."
         />
       </Helmet>
 
@@ -46,7 +46,7 @@ const Founder = () => {
         </div>
       </nav>
 
-      {/* Founder — Ubuntu Tech Academy */}
+      {/* Co-founder — Ubuntu Tech Academy */}
       <section className="relative flex min-h-screen items-center pt-24 pb-16 overflow-hidden">
         {/* glow accents */}
         <div className="pointer-events-none absolute -top-32 -left-32 h-[420px] w-[420px] rounded-full bg-emerald-400/30 blur-[90px]" />
@@ -54,7 +54,7 @@ const Founder = () => {
 
         <div className="container relative z-10 mx-auto px-6">
           <div className="mx-auto mb-12 max-w-4xl">
-            <span className="font-mono text-xs font-semibold text-primary uppercase tracking-widest">Founder</span>
+            <span className="font-mono text-xs font-semibold text-primary uppercase tracking-widest">Co-founder</span>
             <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">Ubuntu Tech Academy</h1>
           </div>
 
@@ -82,7 +82,7 @@ const Founder = () => {
                   </span>
                 </div>
                 <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                  I'm the founder of Ubuntu Tech Academy — an online coding bootcamp on a mission to train
+                  I'm the co-founder of Ubuntu Tech Academy — an online coding bootcamp on a mission to train
                   the next generation of software developers in Zimbabwe and across Africa. It's built around
                   the same principle that shaped my own career: practical, project-driven learning that gets
                   people building real, production-grade software — not just passing tutorials.

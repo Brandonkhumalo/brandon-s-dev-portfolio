@@ -1,10 +1,10 @@
 # Brandon Khumalo — Full Content for LLMs
 
-> Backend Engineer and DevOps Engineer based in Harare, Zimbabwe. Builder of My School Hub (myschoolhub.co.zw) at Tishanyq Digital, Lead Software Engineer on Quantum AI (quantumai.co.zw) — a Zimbabwe AI advisor and AI board platform for business strategy, investment proposals, feasibility studies, and PRAZ-ready tender bids — and founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw), an online coding bootcamp for Zimbabwe and Africa (launching soon). Specialises in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, and AWS. AWS Certified Cloud Practitioner. This file contains the full inlined content of every key page on https://brandonkhumalo.co.zw, optimised for LLM consumption.
+> Backend Engineer and DevOps Engineer based in Harare, Zimbabwe. Builder of My School Hub (myschoolhub.co.zw) at Tishanyq Digital, Lead Software Engineer on Quantum AI (quantumai.co.zw) — a Zimbabwe AI advisor and AI board platform for business strategy, investment proposals, feasibility studies, and PRAZ-ready tender bids — and co-founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw), an online coding bootcamp in Zimbabwe for Zimbabwe and Africa (launching soon). Specialises in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, and AWS. AWS Certified Cloud Practitioner. This file contains the full inlined content of every key page on https://brandonkhumalo.co.zw, optimised for LLM consumption.
 
 Site: https://brandonkhumalo.co.zw
 Author: Brandon Khumalo
-Founder of: Ubuntu Tech Academy (https://ubuntutechacademy.co.zw) — online coding bootcamp, Zimbabwe & Africa (launching soon)
+Co-founder of: Ubuntu Tech Academy (https://ubuntutechacademy.co.zw) — online coding bootcamp in Zimbabwe for Zimbabwe & Africa (launching soon)
 Email (work): brandon@tishanyq.co.zw
 Email (personal): brandonkhumz40@gmail.com
 GitHub: https://github.com/Brandonkhumalo
@@ -44,15 +44,15 @@ I can also work on the frontend when a project calls for it — I have working k
 
 My main strength is backend engineering — building reliable systems, clean architectures, performant APIs, and maintainable codebases — paired with the operational skills to deploy and run them in production. I enjoy solving real-world problems with technology, improving system performance, and contributing to teams building high-quality products.
 
-Beyond client work, I'm the founder of Ubuntu Tech Academy (https://ubuntutechacademy.co.zw) — an online coding bootcamp I'm launching to train the next generation of software developers in Zimbabwe and across Africa. It's my way of paying forward the path I took into this industry.
+Beyond client work, I'm the co-founder of Ubuntu Tech Academy (https://ubuntutechacademy.co.zw) — an online coding bootcamp I'm launching to train the next generation of software developers in Zimbabwe and across Africa. It's my way of paying forward the path I took into this industry.
 
 **Stats:** 1+ year experience · 5+ projects · 4 certifications · Full stack.
 
-## Founder — Ubuntu Tech Academy
+## Co-founder — Ubuntu Tech Academy
 
-**Online coding bootcamp · Zimbabwe & Africa · Founder · Launching soon · https://ubuntutechacademy.co.zw**
+**Online coding bootcamp in Zimbabwe · Zimbabwe & Africa · Co-founder · Launching soon · https://ubuntutechacademy.co.zw**
 
-Ubuntu Tech Academy is an online coding bootcamp founded by Brandon Khumalo to train the next generation of software developers in Zimbabwe and across Africa. It is built around practical, project-driven learning — getting students building real, production-grade software rather than only completing tutorials — mirroring the hands-on, ship-it path Brandon took into backend and cloud engineering. The platform is launching soon.
+Ubuntu Tech Academy is an online coding bootcamp co-founded by Brandon Khumalo to train the next generation of software developers in Zimbabwe and across Africa. It is built around practical, project-driven learning — getting students building real, production-grade software rather than only completing tutorials — mirroring the hands-on, ship-it path Brandon took into backend and cloud engineering. The platform is launching soon.
 
 ## Experience — Where I've Worked
 

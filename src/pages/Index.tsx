@@ -116,11 +116,11 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Brandon Khumalo | Backend Engineer & DevOps Engineer — Harare, Zimbabwe</title>
-        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, and the builder of My School Hub (myschoolhub.co.zw) — a multi-tenant SaaS school management platform at Tishanyq Digital. Founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw) — an online coding bootcamp for Zimbabwe and Africa, launching soon. Specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
+        <meta name="description" content="Brandon Khumalo is a Backend Engineer and DevOps Engineer from Harare, Zimbabwe, and the builder of My School Hub (myschoolhub.co.zw) — a multi-tenant SaaS school management platform at Tishanyq Digital. Co-founder of Ubuntu Tech Academy (ubuntutechacademy.co.zw) — an online coding bootcamp in Zimbabwe for Zimbabwe and Africa, launching soon. Specialising in Go (Echo), Python (Django), JavaScript, React, PostgreSQL, Docker, AWS, and CI/CD pipelines. AWS Certified Cloud Practitioner." />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/" />
         <meta property="og:title" content="Brandon Khumalo | Backend Engineer & DevOps Engineer" />
-        <meta property="og:description" content="Brandon Khumalo — Backend Engineer and DevOps Engineer from Harare, Zimbabwe. Building scalable systems with Go (Echo), Python (Django), React, and PostgreSQL on AWS. Founder of Ubuntu Tech Academy, an online coding bootcamp for Zimbabwe and Africa (launching soon)." />
+        <meta property="og:description" content="Brandon Khumalo — Backend Engineer and DevOps Engineer from Harare, Zimbabwe. Building scalable systems with Go (Echo), Python (Django), React, and PostgreSQL on AWS. Co-founder of Ubuntu Tech Academy, an online coding bootcamp in Zimbabwe for Zimbabwe and Africa (launching soon)." />
       </Helmet>
 
       {/* Nav */}
@@ -141,7 +141,7 @@ const Index = () => {
               to="/founder"
               className="text-sm text-muted-foreground transition-colors hover:text-primary"
             >
-              Founder
+              Co-founder
             </Link>
           </div>
         </div>
@@ -277,6 +277,9 @@ const Index = () => {
               I can also work on the frontend when a project calls for it — I have working knowledge of React, Next.js, TypeScript and Tailwind CSS and have shipped real UIs (including the Laptop World admin dashboard). To be upfront though: frontend isn't my strongest skill. I'll pick it up and deliver, but my edge is on the backend and infrastructure side.
             </motion.p>
             <motion.p variants={fadeUp} custom={3} className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Beyond client work, I co-founded Ubuntu Tech Academy — an online coding bootcamp in Zimbabwe built to train the next generation of software developers across Zimbabwe and Africa through practical, project-driven learning.
+            </motion.p>
+            <motion.p variants={fadeUp} custom={4} className="mt-4 text-base leading-relaxed text-muted-foreground">
               My main strength is backend engineering — building reliable systems, clean architectures, performant APIs, and maintainable codebases — paired with the operational skills to deploy and run them in production. I enjoy solving real-world problems with technology, improving system performance, and contributing to teams building high-quality products.
             </motion.p>
             <motion.div variants={fadeUp} custom={5} className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
