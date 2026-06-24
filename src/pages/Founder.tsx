@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { GraduationCap, ArrowRight, ArrowLeft } from "lucide-react";
+import { GraduationCap, ArrowRight, ArrowLeft, ExternalLink } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -21,13 +21,47 @@ const Founder = () => {
           name="description"
           content="Brandon Khumalo is the co-founder of Ubuntu Tech Academy, an online coding bootcamp in Zimbabwe training the next generation of software developers in Zimbabwe and across Africa through practical, project-driven learning."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/founder" />
+        <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://brandonkhumalo.co.zw/founder" />
+        <meta property="og:site_name" content="Brandon Khumalo" />
         <meta property="og:title" content="Brandon Khumalo | Co-founder of Ubuntu Tech Academy" />
         <meta
           property="og:description"
           content="Co-founder of Ubuntu Tech Academy, an online coding bootcamp in Zimbabwe for Zimbabwe and Africa. Practical, project-driven learning that gets people building real, production-grade software."
         />
+        <meta property="og:image" content="https://brandonkhumalo.co.zw/assets/me.jpg" />
+        <meta property="og:locale" content="en_ZW" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brandon Khumalo | Co-founder of Ubuntu Tech Academy" />
+        <meta
+          name="twitter:description"
+          content="Meet the co-founder of Ubuntu Tech Academy, a practical online coding bootcamp training software developers in Zimbabwe and across Africa."
+        />
+        <meta name="twitter:image" content="https://brandonkhumalo.co.zw/assets/me.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "@id": "https://brandonkhumalo.co.zw/founder#webpage",
+          url: "https://brandonkhumalo.co.zw/founder",
+          name: "Brandon Khumalo | Co-founder of Ubuntu Tech Academy",
+          mainEntity: {
+            "@type": "Person",
+            "@id": "https://brandonkhumalo.co.zw/#person",
+            name: "Brandon Khumalo",
+            url: "https://brandonkhumalo.co.zw",
+            jobTitle: "Co-founder",
+            founderOf: {
+              "@type": "EducationalOrganization",
+              "@id": "https://ubuntutechacademy.co.zw/#organization",
+              name: "Ubuntu Tech Academy",
+              url: "https://ubuntutechacademy.co.zw",
+              description: "An online coding bootcamp training software developers in Zimbabwe and across Africa.",
+              areaServed: ["Zimbabwe", "Africa"],
+            },
+          },
+        })}</script>
       </Helmet>
 
       {/* Nav */}
@@ -92,13 +126,24 @@ const Founder = () => {
                   giving aspiring developers across the continent a hands-on, ship-it route into backend, cloud,
                   and full-stack engineering.
                 </p>
-                <Link
-                  to="/assignments"
-                  className="mt-7 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow"
-                >
-                  View Python Assignments
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <Link
+                    to="/assignments"
+                    className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow"
+                  >
+                    View Python Assignments
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <a
+                    href="https://ubuntutechacademy.co.zw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-primary/40 px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
+                  >
+                    Visit Ubuntu Tech Academy
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>

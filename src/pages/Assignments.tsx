@@ -12,7 +12,44 @@ const Assignments = () => {
           name="description"
           content="Thirty beginner Python assignments for Ubuntu Tech Academy students, covering Day 1 to Day 30 with instructions, guided steps, and answer references."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://brandonkhumalo.co.zw/assignments" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brandonkhumalo.co.zw/assignments" />
+        <meta property="og:site_name" content="Ubuntu Tech Academy" />
+        <meta property="og:title" content="Ubuntu Tech Academy | 30-Day Python Assignments" />
+        <meta
+          property="og:description"
+          content="A free 30-day beginner Python assignment series from Ubuntu Tech Academy, with guided prompts and reference answers."
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Ubuntu Tech Academy | 30-Day Python Assignments" />
+        <meta
+          name="twitter:description"
+          content="Build your Python foundations with 30 days of practical assignments from Ubuntu Tech Academy."
+        />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["CollectionPage", "LearningResource"],
+          "@id": "https://brandonkhumalo.co.zw/assignments#learning-resource",
+          url: "https://brandonkhumalo.co.zw/assignments",
+          name: "Ubuntu Tech Academy 30-Day Python Assignments",
+          description: "Thirty beginner Python assignments with guided prompts and reference answers.",
+          learningResourceType: "Assignment",
+          educationalLevel: "Beginner",
+          inLanguage: "en",
+          numberOfItems: pythonAssignments.length,
+          about: {
+            "@type": "Thing",
+            name: "Python programming",
+          },
+          provider: {
+            "@type": "EducationalOrganization",
+            "@id": "https://ubuntutechacademy.co.zw/#organization",
+            name: "Ubuntu Tech Academy",
+            url: "https://ubuntutechacademy.co.zw",
+          },
+        })}</script>
       </Helmet>
 
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
